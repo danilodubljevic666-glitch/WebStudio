@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react'
 
 export default function Portfolio({ language, t }) {
@@ -12,6 +13,8 @@ export default function Portfolio({ language, t }) {
         }
       },
       { threshold: 0.2 }
+
+      
     )
 
     if (sectionRef.current) {

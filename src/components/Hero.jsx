@@ -1,12 +1,6 @@
-import { useEffect, useState } from 'react'
 import Aurora from './Aurora'
 
-export default function Hero({ language, t }) {
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    setIsVisible(true)
-  }, [])
+export default function Hero({ language, t, ready }) {
 
   return (
     <section className="relative min-h-screen pt-20 pb-20 overflow-hidden flex items-center justify-center">
@@ -26,7 +20,7 @@ export default function Hero({ language, t }) {
         {/* Headline */}
         <div
           className={`transition-all duration-1000 transform ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
           <h1
@@ -43,7 +37,7 @@ export default function Hero({ language, t }) {
         {/* Subheadline */}
         <div
           className={`transition-all duration-1000 transform delay-200 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
           <p className="text-xl md:text-2xl text-gray-300 mb-12 font-light max-w-3xl mx-auto">
@@ -54,7 +48,7 @@ export default function Hero({ language, t }) {
         {/* CTA Buttons */}
         <div
           className={`transition-all duration-1000 transform delay-300 flex flex-col sm:flex-row gap-6 justify-center items-center ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
           <button

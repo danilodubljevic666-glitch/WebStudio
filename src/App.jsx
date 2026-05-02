@@ -31,7 +31,7 @@ export default function App() {
         style={{ opacity: loaded ? 1 : 0 }}
       >
         <Navigation language={language} setLanguage={setLanguage} t={t} scrollPos={scrollPos} />
-        <Hero language={language} t={t} />
+        <Hero language={language} t={t} ready={loaded} />
         <Services language={language} t={t} />
         <Portfolio language={language} t={t} />
         <About language={language} t={t} />

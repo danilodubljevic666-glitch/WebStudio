@@ -142,21 +142,15 @@ export default function About({ language, t }) {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'
           }`}
         >
-          <div className="relative group overflow-hidden rounded-2xl">
+          <div className="relative group">
             <img
               src="/mockup.png"
               alt="WebStudio mockup"
-              className="w-full rounded-2xl"
-            />
-            {/* Shine overlay */}
-            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-              style={{
-                background: 'linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 60%)',
-                boxShadow: 'inset 0 0 40px rgba(0, 102, 255, 0.15)',
-              }}
+              className="w-full"
+              style={{ background: 'transparent' }}
             />
             {/* Glow border */}
-            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
               style={{ boxShadow: '0 0 40px rgba(0, 102, 255, 0.3)' }}
             />
           </div>

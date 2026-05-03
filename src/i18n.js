@@ -10,7 +10,7 @@ export const translations = {
     hero: {
       welcome: 'Dobrodošli na WebStudio',
       headline: 'Gradimo Moćne Webstranice & E-Commerce Rješenja',
-      subheadline: 'Moderno, brzo i dizajnirano da konvertuje',
+      subheadline: 'Moderno, brzo i dizajnirano da impresionira',
       cta1: 'Počni Sada',
       cta2: 'Vidi Projekte',
     },

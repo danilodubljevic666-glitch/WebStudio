@@ -136,43 +136,17 @@ export default function About({ language, t }) {
           </div>
         </div>
 
-        {/* Right - Project grid */}
+        {/* Right - Mockup image */}
         <div
           className={`transition-all duration-700 transform ${
-            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'
           }`}
         >
-          <div className="grid grid-cols-2 gap-3">
-            {[
-              { src: '/lovcenwearsite.png',   url: 'https://lovcenwear.com/' },
-              { src: '/stamparijamadex.png',  url: 'https://stamparijamadex.com/' },
-              { src: '/snkrz.png',            url: 'https://snikrz.vercel.app/' },
-              { src: '/rentacar.png',         url: 'https://rentacar555-jwgs.vercel.app/' },
-            ].map(({ src, url }, i) => (
-              <a
-                key={src}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`group relative overflow-hidden rounded-xl border border-gray-800 hover:border-accent transition-all duration-300 hover-glow ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-                }`}
-                style={{ transitionDelay: `${i * 80}ms` }}
-              >
-                <img
-                  src={src}
-                  alt=""
-                  className="w-full h-36 object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2">
-                  <span className="text-xs text-accent font-semibold">Posjeti →</span>
-                </div>
-              </a>
-            ))}
-          </div>
-
-          {/* Subtle glow below grid */}
-          <div className="mt-3 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
+          <img
+            src="/mockup.png"
+            alt="WebStudio mockup"
+            className="w-full rounded-2xl"
+          />
         </div>
       </div>
     </section>

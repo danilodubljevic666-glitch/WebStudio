@@ -3,7 +3,10 @@ import Aurora from './Aurora'
 export default function Hero({ language, t, ready }) {
 
   return (
-    <section className="relative min-h-screen pt-20 pb-20 overflow-hidden flex items-center justify-center">
+    <section
+      className="relative min-h-screen pt-20 pb-20 overflow-hidden flex items-center justify-center"
+      style={{ background: 'linear-gradient(135deg, #050505 0%, #0a0a0a 100%)' }}
+    >
       {/* Aurora Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-dark" />

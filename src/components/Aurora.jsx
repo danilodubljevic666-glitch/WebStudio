@@ -87,7 +87,10 @@ export default function Aurora({
   useEffect(() => {
     const canvas = canvasRef.current
     const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
-    if (!gl) return
+    if (!gl) {
+      canvas.style.display = 'none'
+      return
+    }
 
     const compile = (type, src) => {
       const s = gl.createShader(type)
@@ -128,13 +131,17 @@ export default function Aurora({
     gl.uniform3fv(uC1, hexToRgb(colorStops[1] || '#7C3AED'))
 
     const resize = () => {
-      canvas.width  = canvas.clientWidth
-      canvas.height = canvas.clientHeight
-      gl.viewport(0, 0, canvas.width, canvas.height)
-      gl.uniform2f(uRes, canvas.width, canvas.height)
+      const w = canvas.clientWidth
+      const h = canvas.clientHeight
+      if (w === 0 || h === 0) return
+      canvas.width  = w
+      canvas.height = h
+      gl.viewport(0, 0, w, h)
+      gl.uniform2f(uRes, w, h)
     }
-    resize()
-    window.addEventListener('resize', resize)
+
+    const ro = new ResizeObserver(resize)
+    ro.observe(canvas)
 
     const start = performance.now()
     const render = () => {
@@ -144,11 +151,15 @@ export default function Aurora({
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4)
       rafRef.current = requestAnimationFrame(render)
     }
-    render()
+
+    rafRef.current = requestAnimationFrame(() => {
+      resize()
+      render()
+    })
 
     return () => {
       cancelAnimationFrame(rafRef.current)
-      window.removeEventListener('resize', resize)
+      ro.disconnect()
     }
   }, [colorStops, amplitude, blend, speed])
 

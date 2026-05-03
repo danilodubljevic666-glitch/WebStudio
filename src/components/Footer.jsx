@@ -80,32 +80,6 @@ export default function Footer({ language, t }) {
             </ul>
           </div>
 
-          {/* Legal */}
-          <div
-            className={`transition-all duration-700 transform delay-300 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            <h4 className="font-semibold mb-4">{t(language, 'footer.legalTitle')}</h4>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-accent transition-colors text-sm"
-                >
-                  {t(language, 'footer.privacy')}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-accent transition-colors text-sm"
-                >
-                  {t(language, 'footer.terms')}
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Divider */}

@@ -156,7 +156,7 @@ export default function Portfolio({ language, t }) {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 {card}
-                <p className="text-white font-semibold text-base mt-3 px-1">{project.label}</p>
+                <p className="text-white font-semibold text-base mt-3 text-center">{project.label}</p>
               </div>
             )
           })}

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-function useCountUp(target, duration = 1500, active = false) {
+function useCountUp(target, duration = 3000, active = false) {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function useCountUp(target, duration = 1500, active = false) {
 }
 
 function StatCard({ target, suffix, labelKey, language, t, delay, active }) {
-  const count = useCountUp(target, 1500, active)
+  const count = useCountUp(target, 3000, active)
 
   return (
     <div

@@ -43,7 +43,7 @@ export const translations = {
       title: 'O WebStudiu',
       desc: 'WebStudio je vodeća agencija za web razvoj u Crnoj Gori. Specijaliziramo se za kreiranje modernih, brzih i kvalitetnih webstranica i e-commerce rješenja koja prodaju.',
       features: {
-        feature1: 'Brz razvoj bez kompromisa na kvaliteti',
+        feature1: 'Brz razvoj bez sumnje na kvalitet',
         feature2: 'Najnovije tehnologije i best practices',
         feature3: 'Posvećen tim sa bogatim iskustvom',
       },

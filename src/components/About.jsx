@@ -139,21 +139,14 @@ export default function About({ language, t }) {
         {/* Right - Mockup image */}
         <div
           className={`transition-all duration-700 transform ${
-            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'
+            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'
           }`}
         >
-          <div className="relative group">
-            <img
-              src="/mockup.png"
-              alt="WebStudio mockup"
-              className="w-full"
-              style={{ background: 'transparent' }}
-            />
-            {/* Glow border */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-              style={{ boxShadow: '0 0 40px rgba(0, 102, 255, 0.3)' }}
-            />
-          </div>
+          <img
+            src="/mockup.png"
+            alt="WebStudio mockup"
+            className="w-full"
+          />
         </div>
       </div>
     </section>

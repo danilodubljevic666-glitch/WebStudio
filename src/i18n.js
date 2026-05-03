@@ -8,6 +8,7 @@ export const translations = {
       language: 'Jezik',
     },
     hero: {
+      welcome: 'Dobrodošli na WebStudio',
       headline: 'Gradimo Moćne Webstranice & E-Commerce Rješenja',
       subheadline: 'Moderno, brzo i dizajnirano da konvertuje',
       cta1: 'Počni Sada',
@@ -87,6 +88,7 @@ export const translations = {
       language: 'Language',
     },
     hero: {
+      welcome: 'Welcome to WebStudio',
       headline: 'We Build Powerful Websites & E-Commerce Solutions',
       subheadline: 'Modern, fast, and designed to convert',
       cta1: 'Get Started',

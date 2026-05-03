@@ -17,9 +17,20 @@ export default function Hero({ language, t, ready }) {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        {/* Headline */}
+        {/* Welcome */}
         <div
           className={`transition-all duration-1000 transform ${
+            ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
+          <p className="text-accent font-semibold tracking-widest uppercase text-sm md:text-base mb-4">
+            {t(language, 'hero.welcome')}
+          </p>
+        </div>
+
+        {/* Headline */}
+        <div
+          className={`transition-all duration-1000 transform delay-100 ${
             ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >

@@ -27,6 +27,7 @@ export default function Portfolio({ language, t }) {
   const projects = [
     {
       id: 1,
+      label: 'Lovcen Wear',
       name: 'portfolio.project1',
       color: 'from-blue-600 to-cyan-500',
       image: '/lovcenwearsite.png',
@@ -34,6 +35,7 @@ export default function Portfolio({ language, t }) {
     },
     {
       id: 2,
+      label: 'Štamparija Madex',
       name: 'portfolio.project2',
       color: 'from-purple-600 to-pink-500',
       image: '/stamparijamadex.png',
@@ -41,6 +43,7 @@ export default function Portfolio({ language, t }) {
     },
     {
       id: 3,
+      label: 'SNRKZ',
       name: 'portfolio.project3',
       color: 'from-orange-600 to-red-500',
       image: '/snkrz.png',
@@ -48,6 +51,7 @@ export default function Portfolio({ language, t }) {
     },
     {
       id: 4,
+      label: 'Rent a Car',
       name: 'portfolio.project4',
       color: 'from-green-600 to-emerald-500',
       image: '/rentacar.png',
@@ -131,24 +135,28 @@ export default function Portfolio({ language, t }) {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`
 
-            return project.url ? (
+            const card = project.url ? (
               <a
-                key={project.id}
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cardClass}
-                style={{ transitionDelay: `${index * 100}ms` }}
               >
                 {inner}
               </a>
             ) : (
+              <div className={cardClass}>
+                {inner}
+              </div>
+            )
+
+            return (
               <div
                 key={project.id}
-                className={cardClass}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                {inner}
+                {card}
+                <p className="text-white font-semibold text-base mt-3 px-1">{project.label}</p>
               </div>
             )
           })}

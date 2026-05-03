@@ -147,6 +147,7 @@ export default function About({ language, t }) {
               src="/mockup.png"
               alt="WebStudio mockup"
               className="w-full rounded-2xl transition-transform duration-500 group-hover:scale-110"
+              style={{ mixBlendMode: 'lighten' }}
             />
             {/* Shine overlay */}
             <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"

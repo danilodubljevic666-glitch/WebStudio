@@ -88,7 +88,7 @@ export default function Services({ language, t }) {
               {/* Animated gradient on hover */}
               <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300 from-accent to-accentAlt" />
 
-              <div className="relative p-8 h-full flex flex-col">
+              <div className="relative p-8 h-full flex flex-col items-center text-center">
                 {/* Icon */}
                 <div className="text-6xl mb-6 transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12 block">
                   {service.icon}
@@ -100,15 +100,9 @@ export default function Services({ language, t }) {
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300 flex-grow mb-6">
+                <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                   {t(language, `services.${service.key}.desc`)}
                 </p>
-
-                {/* Arrow */}
-                <div className="flex items-center text-accent opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-2">
-                  <span className="text-sm font-semibold">{t(language, 'services.learnMore')}</span>
-                  <span className="ml-2">→</span>
-                </div>
               </div>
             </div>
           ))}

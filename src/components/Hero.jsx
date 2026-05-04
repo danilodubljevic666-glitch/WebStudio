@@ -66,6 +66,12 @@ export default function Hero({ language, t, ready }) {
           }`}
         >
           <button
+            className="px-8 py-4 bg-gradient-to-r from-accent to-purple-600 text-white font-bold rounded-lg hover:shadow-2xl hover:shadow-accent/40 transition-all duration-300 transform hover:scale-105 text-lg"
+            onClick={() => document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })}
+          >
+            {t(language, 'hero.ctaPricing')}
+          </button>
+          <button
             className="px-8 py-4 border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent hover:text-white transition-all duration-300 transform hover:scale-105 hover-glow text-lg"
             onClick={() => document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })}
           >

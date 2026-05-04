@@ -14,6 +14,7 @@ export const translations = {
       subheadline: 'Moderno, brzo i dizajnirano da impresionira',
       cta1: 'Počni Sada',
       cta2: 'Vidi Projekte',
+      ctaPricing: 'Pogledaj Pakete',
     },
     services: {
       title: 'Naše Usluge',
@@ -153,6 +154,7 @@ export const translations = {
       subheadline: 'Modern, fast, and designed to convert',
       cta1: 'Get Started',
       cta2: 'View Projects',
+      ctaPricing: 'View Packages',
     },
     services: {
       title: 'Our Services',

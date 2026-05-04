@@ -70,6 +70,28 @@ export const translations = {
         submit: 'Pošalji',
       },
     },
+    why: {
+      title: 'Zašto vam treba websajt?',
+      paragraph: 'U 2025. godini, vaša online prezentacija je vaša vizit karta. Više od 80% kupaca pretražuje internet prije nego što donese odluku o kupovini — ako vas nema online, za njih ne postojite. Websajt nije trošak, to je investicija koja radi za vas 24 sata dnevno, 7 dana u sedmici.',
+      reasons: {
+        visibility: {
+          title: 'Vidljivost bez granica',
+          desc: 'Dostupni ste kupcima u bilo koje doba dana, sa bilo kojeg mjesta na svijetu.',
+        },
+        revenue: {
+          title: 'Povećajte prihod',
+          desc: 'E-commerce platforma vam omogućava prodaju bez fizičke prodavnice — automatski, dok spavate.',
+        },
+        trust: {
+          title: 'Izgradite povjerenje',
+          desc: 'Profesionalan sajt daje kredibilitet vašem biznisu i odvaja vas od konkurencije koja ga nema.',
+        },
+        growth: {
+          title: 'Pratite rast',
+          desc: 'Znate tačno koliko ljudi posjećuje vaš sajt, odakle dolaze i šta ih najviše zanima.',
+        },
+      },
+    },
     pricing: {
       title: 'Naši Paketi',
       subtitle: 'Odaberite paket koji odgovara vašem poslovanju',
@@ -185,6 +207,28 @@ export const translations = {
         email: 'Email',
         message: 'Message',
         submit: 'Send',
+      },
+    },
+    why: {
+      title: 'Why do you need a website?',
+      paragraph: 'In 2025, your online presence is your business card. More than 80% of customers search the internet before making a purchase decision — if you\'re not online, you simply don\'t exist for them. A website isn\'t a cost, it\'s an investment that works for you 24 hours a day, 7 days a week.',
+      reasons: {
+        visibility: {
+          title: 'Unlimited visibility',
+          desc: 'You\'re available to customers at any time of day, from anywhere in the world.',
+        },
+        revenue: {
+          title: 'Increase revenue',
+          desc: 'An e-commerce platform lets you sell without a physical store — automatically, while you sleep.',
+        },
+        trust: {
+          title: 'Build trust',
+          desc: 'A professional website gives your business credibility and sets you apart from competitors who don\'t have one.',
+        },
+        growth: {
+          title: 'Track growth',
+          desc: 'Know exactly how many people visit your site, where they come from, and what interests them most.',
+        },
       },
     },
     pricing: {

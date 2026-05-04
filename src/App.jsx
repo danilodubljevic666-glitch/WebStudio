@@ -3,6 +3,7 @@ import { t } from './i18n'
 import Preloader from './components/Preloader'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
+import WhyWebsite from './components/WhyWebsite'
 import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
@@ -33,6 +34,7 @@ export default function App() {
       >
         <Navigation language={language} setLanguage={setLanguage} t={t} scrollPos={scrollPos} />
         <Hero language={language} t={t} ready={loaded} />
+        <WhyWebsite language={language} t={t} />
         <Services language={language} t={t} />
         <Portfolio language={language} t={t} />
         <About language={language} t={t} />

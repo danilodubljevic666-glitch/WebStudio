@@ -72,7 +72,7 @@ export const translations = {
     },
     why: {
       title: 'Zašto vam treba websajt?',
-      paragraph: 'U 2025. godini, vaša online prezentacija je vaša vizit karta. Više od 80% kupaca pretražuje internet prije nego što donese odluku o kupovini — ako vas nema online, za njih ne postojite. Websajt nije trošak, to je investicija koja radi za vas 24 sata dnevno, 7 dana u sedmici.',
+      paragraph: 'U 2026. godini, vaša online prezentacija je vaša vizit karta. Više od 80% kupaca pretražuje internet prije nego što donese odluku o kupovini, ako vas nema online, za njih ne postojite. Websajt nije trošak, to je investicija koja radi za vas 24 sata dnevno, 7 dana u sedmici.',
       reasons: {
         visibility: {
           title: 'Vidljivost bez granica',

@@ -27,7 +27,7 @@ const plans = [
       { labelKey: 'pricing.features.seoAdvanced', included: true },
       { labelKey: 'pricing.features.contactForm', included: true },
       { labelKey: 'pricing.features.ecommerceBasic', included: true },
-      { labelKey: 'pricing.features.payment', included: true },
+      { labelKey: 'pricing.features.payment', included: false },
       { labelKey: 'pricing.features.support3', included: true },
     ],
   },

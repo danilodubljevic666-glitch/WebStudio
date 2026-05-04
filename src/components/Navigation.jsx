@@ -32,7 +32,7 @@ export default function Navigation({ language, setLanguage, t, scrollPos }) {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            {['services', 'portfolio', 'about', 'contact'].map((item, i) => (
+            {['services', 'portfolio', 'about', 'pricing', 'contact'].map((item, i) => (
               <a
                 key={item}
                 href={`#${item}`}
@@ -90,7 +90,7 @@ export default function Navigation({ language, setLanguage, t, scrollPos }) {
             <div className="h-px w-full" style={{ background: 'linear-gradient(90deg, #0066FF, #7C3AED, #FF8C00)' }} />
 
             <div className="px-4 py-2">
-              {['services', 'portfolio', 'about', 'contact'].map((item, i) => (
+              {['services', 'portfolio', 'about', 'pricing', 'contact'].map((item, i) => (
                 <a
                   key={item}
                   href={`#${item}`}

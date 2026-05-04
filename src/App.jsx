@@ -7,6 +7,7 @@ import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
 import Contact from './components/Contact'
+import Pricing from './components/Pricing'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
         <Services language={language} t={t} />
         <Portfolio language={language} t={t} />
         <About language={language} t={t} />
+        <Pricing language={language} t={t} />
         <Contact language={language} t={t} />
         <Footer language={language} t={t} />
       </div>

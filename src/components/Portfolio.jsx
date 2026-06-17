@@ -57,6 +57,22 @@ export default function Portfolio({ language, t }) {
       image: '/rentacar.png',
       url: 'https://rentacar555-jwgs.vercel.app/',
     },
+    {
+      id: 5,
+      label: 'Rent a Car 55',
+      name: 'portfolio.project5',
+      color: 'from-amber-600 to-orange-500',
+      image: '/rentacar55.png',
+      url: 'https://55rentacar.me',
+    },
+    {
+      id: 6,
+      label: 'Etno Selo Lalić',
+      name: 'portfolio.project6',
+      color: 'from-teal-600 to-green-500',
+      image: '/etno-selo-lalic.png',
+      url: 'https://etnoselolalic.me',
+    },
   ]
 
   return (
